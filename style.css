@@ -7,16 +7,19 @@
     background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg");
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 
 #container-2 {
     background-image: url("https://www.thesprucepets.com/thmb/sfuyyLvyUx636_Oq3Fw5_mt-PIc=/3760x2820/smart/filters:no_upscale()/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg");
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 
 #container-3 {
     background-image: url("https://www.cesarsway.com/wp-content/uploads/2019/10/AdobeStock_190562703.jpeg");
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
