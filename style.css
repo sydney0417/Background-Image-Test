@@ -155,6 +155,12 @@
     .circular-progress-value {
         padding: 20px;
     }
+
+    #academic-progress-container,
+    #community-progress-container,
+    #global-progress-container {
+        background-size: 400px;
+    }
 }
 
 @media (max-width: 340px) {
