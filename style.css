@@ -1,34 +1,169 @@
-.bg-img-container {
-    width: 50%;
-    height: 200px;
-}
-
-#container-1 {
-    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg");
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-
-#container-2 {
-    background-image: url("https://www.thesprucepets.com/thmb/sfuyyLvyUx636_Oq3Fw5_mt-PIc=/3760x2820/smart/filters:no_upscale()/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg");
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-
-#container-3 {
-    background-image: url("https://www.cesarsway.com/wp-content/uploads/2019/10/AdobeStock_190562703.jpeg");
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
-
-.img-container {
+.honors-progress-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 10px;
+}
+
+.honors-progress-col {
+    width: 33%;
+}
+
+.circular-progress-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: 120px;
+    margin: 0.25rem auto;
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+    z-index: 15;
+    background-color: white;
+    overflow: hidden;
+}
+
+.circular-progress-bar {
+    background-color: #006747;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    transition-property: width;
+    transition-duration: 1s;
+    z-index: 4;
+}
+
+.circular-progress-value {
+    color: #006747;
+    padding: 25%;
+    vertical-align: middle;
+    font-weight: bold;
+    z-index: 10;
+    visibility: visible;
+    user-select: none;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-shadow: 0 0 2px #006747;
+    border-radius: 50%;
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-color: #006747;
+    border: solid;
+}
+
+.circular-progress-text {
+    z-index: 100;
+    font-size: 1em;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#academic-progress-container {
+    background-image: url("https://honors.usf.edu/Images/Test-JP/books.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    position: relative;
+}
+
+#community-progress-container {
+    background-image: url("https://honors.usf.edu/Images/Test-JP/flower.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    position: relative;
+}
+
+#global-progress-container {
+    background-image: url("https://honors.usf.edu/Images/Test-JP/mountains.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    position: relative;
+}
+
+.honors-progress {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.90;
+}
+
+@media (max-width: 993px) {
+    .honors-progress-container {
+        flex-direction: column;
+    }
+
+    .honors-progress-col {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .honors-progress {
+        width: 225px;
+    }
+
+    .circular-progress-container {
+        left: 140px;
+    }
+}
+
+@media (min-width: 994px) and (max-width: 1200px) {
+    .circular-progress-container {
+        left: 90px;
+        margin: 0.25rem auto;
+    }
+
+    .honors-progress {
+        width: 125px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 460px) { /* Was 400 */
+    .honors-progress {
+        width: 125px;
+        margin-bottom: -10px;
+    }
+
+    .circular-progress-container {
+        left: 80px;
+    }
+
+    .circular-progress-text {
+        display: inline;
+    }
+
+    .circular-progress-value {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .honors-progress {
+        width: 110px;
+        left: 15px;
+    }
+
+    .circular-progress-container {
+        left: 60px;
+    }
 }
