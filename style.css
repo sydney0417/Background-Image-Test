@@ -160,6 +160,7 @@
     #community-progress-container,
     #global-progress-container {
         background-size: 400px;
+        width: 75%;
     }
 }
 
